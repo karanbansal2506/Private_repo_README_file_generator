@@ -12,8 +12,6 @@ You can find the original tasks here: https://byte-site.vercel.app/tasks/webd
 *   [Tech Stack](#tech-stack)
 *   [Project Structure](#project-structure)
 *   [Contributing](#contributing)
-*   [License Information](#license-information)
-*   [Acknowledgments](#acknowledgments)
 
 ## Description
 
