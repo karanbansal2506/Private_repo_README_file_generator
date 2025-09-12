@@ -2,12 +2,6 @@ import { GoogleGenAI } from "@google/genai";
 import * as fs from 'fs';
 import "dotenv/config"; 
 
-async function repoInfo(repoUrl) {
-    const response = await fetch(repoUrl)
-    const repoData = await response.json();
-    return repoData;
-}
-
 export async function ReadMe_generator (repoData) {
     try {
     
