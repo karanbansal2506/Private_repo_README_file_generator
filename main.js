@@ -13,6 +13,9 @@ let Repo_Data = ''
 const repoOwner = process.env.GITHUB_REPO_OWNER;
 const repoName = process.env.GITHUB_REPO_NAME;
 
+// I wanted to access repo only one time to get repo data , that's why i didn't created session and state (as I would have to store state temporarily somewhere , usually it is stored in session for checking when we get callback ).
+// state is helpful for session management and security and work like session token for security 
+
 app.get('/login', (req, res) => {
     
     const authUrl = `https://github.com/login/oauth/authorize?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scope}`;
