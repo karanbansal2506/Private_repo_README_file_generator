@@ -2,7 +2,7 @@ const { GoogleGenAI } = require("@google/genai");
 const fs = require('fs');
 require('dotenv').config();
 
-export async function ReadMe_generator (repoData) {
+async function ReadMe_generator (repoData) {
     try {
     
     const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY });
@@ -37,3 +37,4 @@ export async function ReadMe_generator (repoData) {
 }
 }
 
+module.exports = ReadMe_generator;
