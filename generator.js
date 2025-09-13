@@ -37,4 +37,4 @@ async function ReadMe_generator (repoData) {
 }
 }
 
-module.exports = ReadMe_generator;
+module.exports = {ReadMe_generator};
