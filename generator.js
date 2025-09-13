@@ -1,6 +1,6 @@
-import { GoogleGenAI } from "@google/genai";
-import * as fs from 'fs';
-import "dotenv/config"; 
+const { GoogleGenAI } = require("@google/genai");
+const fs = require('fs');
+require('dotenv').config();
 
 export async function ReadMe_generator (repoData) {
     try {
