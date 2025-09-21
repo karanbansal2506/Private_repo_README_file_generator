@@ -3,7 +3,7 @@ const app = express();
 require('dotenv').config();
 const { ReadMe_generator } = require('./generator');
 
-const clientId = process.env.GITHUB_CLIENT_ID;
+const clientId = process.env.CLIENT_ID;
 const clientSecret = process.env.GITHUB_CLIENT_SECRET;
 const redirectUri = 'http://localhost:3000/callback';
 const scope = 'repo user';
